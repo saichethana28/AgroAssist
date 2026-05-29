@@ -22,8 +22,7 @@ function App() {
   const [activeTab, setActiveTab] =
     useState<Tab>('detect')
 
-  const [detectionResult, setDetectionResult] =
-    useState(null)
+  
 
   return (
 
@@ -558,11 +557,7 @@ function App() {
           <div>
 
             {activeTab === 'detect' && (
-              <DiseaseDetector
-                onResult={
-                  setDetectionResult
-                }
-              />
+              <DiseaseDetector />
             )}
 
             {activeTab === 'treatment' && (

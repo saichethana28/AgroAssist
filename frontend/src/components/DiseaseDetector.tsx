@@ -3,13 +3,7 @@ import { Upload, Loader, AlertCircle } from 'lucide-react'
 import { API_BASE_URL } from '../config'
 import axios from 'axios'
 
-interface DiseaseDetectorProps {
-  onResult: (result: any) => void
-}
-
-export default function DiseaseDetector({
-  onResult,
-}: DiseaseDetectorProps) {
+export default function DiseaseDetector() {
 
   const [file, setFile] = useState<File | null>(null)
 
@@ -84,7 +78,6 @@ export default function DiseaseDetector({
 
       setResult(response.data)
 
-      onResult(response.data)
 
     } catch (err: any) {
 
