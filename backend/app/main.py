@@ -46,9 +46,9 @@ async def lifespan(app: FastAPI):
     )
 
     # Initialize Vector DB
-    init_vector_db(
-        settings.VECTOR_DB_PATH
-    )
+    #init_vector_db(
+    #    settings.VECTOR_DB_PATH
+    #)
 
     # Initialize RAG
     init_rag_pipeline()
