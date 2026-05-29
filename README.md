@@ -83,7 +83,7 @@ The core insight: combine zero-shot vision capabilities with domain-specific kno
 
 1. **Clone and navigate**
 ```bash
-git clone https://github.com/yourusername/AgroAssist.git
+git clone https://github.com/saichethana28/AgroAssist.git
 cd AgroAssist
 ```
 
